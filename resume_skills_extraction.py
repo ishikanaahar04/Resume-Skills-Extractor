@@ -3,15 +3,13 @@ import docx2txt
 from PyPDF2 import PdfReader
 
 # List of skills to search for in the resume
-SKILLS_DB = ["Python", "Java", "Machine Learning", "SQL", "HTML", "CSS", "JavaScript",
-"HTML", "CSS", "Bootstrap", "Tailwind", "React", "Angular", "Vue.js", "Node.js", "Express.js", "Flask", "Django",
+SKILLS_DB = ["Python", "Java", "Machine Learning", "SQL", "C++", "HTML", "CSS", "JavaScript",
+"Bootstrap", "Tailwind", "React", "Angular", "Vue.js", "Node.js", "Express.js", "Flask", "Django",
 # Databases
-"SQL", "MySQL", "PostgreSQL", "MongoDB", "SQLite", "Firebase",
+"MySQL", "PostgreSQL", "MongoDB", "SQLite", "Firebase",
 # Data Science & ML
-
 "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "TensorFlow", "Keras", "PyTorch", "Data Analysis",
-"Data Visualization", "Machine Learning", "Deep Learning", "Artificial Intelligence", "Natural Language Processing",
-
+"Data Visualization", "Deep Learning", "Artificial Intelligence", "Natural Language Processing",
 # Tools & Platforms
 "Git", "GitHub", "Docker", "AWS", "Google Cloud", "Azure", "Jira", "VS Code", "Jupyter", "Linux", "Power BI", "Tableau",
 # Concepts
@@ -50,7 +48,9 @@ def extract_skills(text):
     return found_skills
 
 # Example of usage:
-file_path = 'college_resume_ayush.pdf'  # Replace with the actual file path
+file_path = 'college_resume_ayush.pdf'
+  # Replace 'folder_name' with the actual folder name
+  # Replace with the actual file path
 
 # Extract text from the resume file
 resume_text = extract_text_from_resume(file_path)

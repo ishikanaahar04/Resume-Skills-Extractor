@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Skill Extractor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Resume Skill Extractor</h1>
+            <p>Upload your resume and get the name and skills extracted!</p>
+        </div>
+        <div class="upload-section">
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <label for="file-upload" class="upload-btn">
+                    <span>Choose Resume</span>
+                </label>
+                <input type="file" id="file-upload" name="file" accept=".pdf, .docx">
+                <button type="submit" class="submit-btn">Upload</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
