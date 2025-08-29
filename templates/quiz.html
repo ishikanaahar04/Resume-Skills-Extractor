@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz</title>
+</head>
+<body>
+  <h2>Question {{ q_no }} of {{ total }}</h2>
+  <form method="POST">
+    <p><strong>{{ question.question }}</strong></p>
+    {% for option in question.options %}
+      <label>
+        <input type="radio" name="answer" value="{{ option }}" required>
+        {{ option }}
+      </label><br>
+    {% endfor %}
+    <br>
+    {% if q_no == total %}
+      <button type="submit">Submit Quiz</button>
+    {% else %}
+      <button type="submit">Next</button>
+    {% endif %}
+  </form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extracted Skills</title>
+</head>
+<body>
+    <h2>Welcome {{ name }}!</h2>
+    <h3>Top Extracted Skills:</h3>
+    <ul>
+        {% for skill in skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+
+    <form action="{{ url_for('start_quiz') }}" method="post">
+        <button type="submit">Start Quiz</button>
+    </form>
+</body>
+</html>

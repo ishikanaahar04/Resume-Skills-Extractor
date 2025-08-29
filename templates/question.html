@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Question</title>
+</head>
+<body>
+    <h1>Skill: {{ skill }}</h1>
+    <h2>Question {{ current_index + 1 }} of {{ total_questions }}</h2>
+    <p>{{ question }}</p>
+
+    <form action="/answer" method="post">
+        <input type="hidden" name="skill" value="{{ skill }}">
+        <input type="hidden" name="index" value="{{ current_index }}">
+
+        {% for opt in options %}
+            <label><input type="radio" name="answer" value="{{ opt }}" required> {{ opt }}</label><br>
+        {% endfor %}
+
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if feedback %}
+        <p><strong>{{ feedback }}</strong></p>
+    {% endif %}
+</body>
+</html>

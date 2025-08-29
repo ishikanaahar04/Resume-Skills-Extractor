@@ -1,28 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extracted Resume Info</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
+<html>
+<head><title>Quiz Result</title></head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Extracted Information</h1>
-        </div>
-        <div class="result">
-            <p><strong>Name:</strong> <span>{{ name }}</span></p>
-            <p><strong>Skills:</strong></p>
-            <div class="skills-container">
-                {% for skill in skills %}
-                    <span class="skill-tag">{{ skill }}</span>
-                {% endfor %}
-            </div>
-        </div>
-        <div class="back-button">
-            <a href="/">Back to Upload</a>
-        </div>
-    </div>
+    <h2>Hi {{ name }}!</h2>
+    <p>Your Score: {{ score }} out of {{ total }}</p>
 </body>
 </html>

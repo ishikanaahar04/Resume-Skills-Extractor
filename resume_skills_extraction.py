@@ -48,7 +48,7 @@ def extract_skills(text):
     return found_skills
 
 # Example of usage:
-file_path = 'college_resume_ayush.pdf'
+file_path = 'C:\\Users\\Ishika Nahar\\Resume-Skills-Extractor\\1CR22IS061_ISHIKANAHAR_COLLEGE_RESUME_01.pdf'
   # Replace 'folder_name' with the actual folder name
   # Replace with the actual file path
 
@@ -56,7 +56,14 @@ file_path = 'college_resume_ayush.pdf'
 resume_text = extract_text_from_resume(file_path)
 
 # Extract skills from the resume text
+import random
+
+# Extract skills from the resume text
 skills = extract_skills(resume_text)
 
-# Print the extracted skills
+# Shuffle the skills list so order changes every time
+random.shuffle(skills)
+
+# Print the extracted skills in random order
 print("Extracted Skills:", skills)
+
