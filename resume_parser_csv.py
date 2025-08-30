@@ -62,7 +62,7 @@ def save_to_csv(name, skills, output_file="extracted_resume_data.csv"):
         writer.writerow([name, ", ".join(skills)])
 
 if __name__ == "__main__":
-    file_path = "C:\\Users\\Ishika Nahar\\Resume-Skills-Extractor\\1CR22IS061_ISHIKANAHAR_COLLEGE_RESUME_01.pdf"
+    file_path = "C:\\Users\Ishika Nahar\Resume-Skills-Extractor\college_resume_ayush.pdf"
 
     try:
         text = extract_text_from_resume(file_path)

@@ -54,66 +54,89 @@ You are an extremely careful and precise quiz generator.
 Task: Generate exactly 5 multiple-choice questions (MCQs) on the topic: {skill}. {skill} can be any programming language, database, tool, or technology.
 
 Requirements:
-1. Each question must be factually accurate and relevant to {skill}.
-2. Keep the **difficulty level medium**.
-3. Include a code snippet **only if directly relevant** to the question. Otherwise, no code snippet.
-4. Each question must have exactly 4 answer options labeled:
-   A. 
-   B. 
-   C. 
-   D. 
-5. The **correct answer must always be one of these 4 options**. Do not use placeholders like "NONE OF THE ABOVE" or answers outside A-D.
-6. Immediately after the options, include the correct answer using **this exact format**:
-   Answer: <A/B/C/D>
-7. Ensure that questions do **not repeat** each time the generator runs. The 5 questions should be unique.
-8. Do **not** include interactive prompts like “Your answer” or explanations.
-9. Output format example (strictly follow this pattern for all 5 questions):
-10. Include the correct answer using this exact format: Answer: <A/B/C/D>
-11. IMPORTANT: Generate a quiz with unique questions every time I run main.py. Do not repeat questions from previous runs. Each run should
-    give me a new set of questions.
-12. Add randomness so that the set of questions is different on every run, even if the skill is the same.
 
+Each question must be factually accurate and relevant to {skill}.
 
+Keep the difficulty level medium.
 
-Q1. [Question text]  
-[Optional code snippet if relevant]  
-A. [Option A]  
-B. [Option B]  
-C. [Option C]  
-D. [Option D]  
-Answer: [A/B/C/D]  
+Include a code snippet only if directly relevant to the question. Otherwise, no code snippet.
 
-Q2. [Question text]  
-[Optional code snippet if relevant]  
-A. [Option A]  
-B. [Option B]  
-C. [Option C]  
-D. [Option D]  
-Answer: [A/B/C/D]  
+If a code snippet is included, write it directly as plain text (no backticks, no quotes, no markdown, no comments).
 
-Q3. [Question text]  
-[Optional code snippet if relevant]  
-A. [Option A]  
-B. [Option B]  
-C. [Option C]  
-D. [Option D]  
-Answer: [A/B/C/D]  
+Each question must have exactly 4 answer options labeled:
+A.
+B.
+C.
+D.
 
-Q4. [Question text]  
-[Optional code snippet if relevant]  
-A. [Option A]  
-B. [Option B]  
-C. [Option C]  
-D. [Option D]  
-Answer: [A/B/C/D]  
+The correct answer must always be one of these 4 options. Do not use placeholders like "NONE OF THE ABOVE" or answers outside A-D.
 
-Q5. [Question text]  
-[Optional code snippet if relevant]  
-A. [Option A]  
-B. [Option B]  
-C. [Option C]  
-D. [Option D]  
-Answer: [A/B/C/D]  
+Immediately after the options, include the correct answer using this exact format:
+Answer: <A/B/C/D>
+
+Ensure that questions do not repeat each time the generator runs. The 5 questions should be unique.
+
+Do not include interactive prompts like “Your answer” or explanations.
+
+Output format example (strictly follow this pattern for all 5 questions).
+
+IMPORTANT: Generate a quiz with unique questions every time I run main.py. Do not repeat questions from previous runs. Each run should give me a new set of questions.
+
+Add randomness so that the set of questions is different on every run, even if the skill is the same.
+
+Include a variety of question types (e.g., definition, code explanation, best practices).
+
+Even if the option is given in lower case, the correct answer must match the case used in the question.
+
+For programming languages (Java, Python, C, C++, SQL), include some questions with code snippets to test user knowledge.
+
+Code snippet–based questions must show valid, complete code fragments that compile/run correctly (no commented-out code, no syntax errors).
+
+Please ensure snippets are short, clear, and directly tied to the question.
+
+Always ensure factual accuracy of both questions and answers.
+
+Question Format (strict):
+
+Q1. [Question text]
+[Optional code snippet if relevant]
+A. [Option A]
+B. [Option B]
+C. [Option C]
+D. [Option D]
+Answer: [A/B/C/D]
+
+Q2. [Question text]
+[Optional code snippet if relevant]
+A. [Option A]
+B. [Option B]
+C. [Option C]
+D. [Option D]
+Answer: [A/B/C/D]
+
+Q3. [Question text]
+[Optional code snippet if relevant]
+A. [Option A]
+B. [Option B]
+C. [Option C]
+D. [Option D]
+Answer: [A/B/C/D]
+
+Q4. [Question text]
+[Optional code snippet if relevant]
+A. [Option A]
+B. [Option B]
+C. [Option C]
+D. [Option D]
+Answer: [A/B/C/D]
+
+Q5. [Question text]
+[Optional code snippet if relevant]
+A. [Option A]
+B. [Option B]
+C. [Option C]
+D. [Option D]
+Answer: [A/B/C/D]
 
 
 Only output the questions and answers exactly as specified above. No extra text. Ensure 100% factual accuracy.

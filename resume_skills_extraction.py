@@ -48,8 +48,7 @@ def extract_skills(text):
     return found_skills
 
 # Example of usage:
-file_path = 'C:\\Users\\Ishika Nahar\\Resume-Skills-Extractor\\1CR22IS061_ISHIKANAHAR_COLLEGE_RESUME_01.pdf'
-  # Replace 'folder_name' with the actual folder name
+file_path = "C:\\Users\Ishika Nahar\Resume-Skills-Extractor\college_resume_ayush.pdf"
   # Replace with the actual file path
 
 # Extract text from the resume file
